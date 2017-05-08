@@ -31,6 +31,12 @@ public class AlphaPlusAlgorithmMain {
                         return Utils.demoLLTeventLog();
                     case "chap7":
                         return Utils.chapter7EventLog();
+                    case "T1":
+                    	return Utils.BPMNTOMResourceManagerLog();
+                    case "T2":
+                    	return Utils.BPMNTOMTechnicalLeaderLog();
+                    case "T3":
+                    	return Utils.BPMNTOMTechnicalLeaderOptLog();
 
                     default:
                         error = true;

@@ -77,6 +77,35 @@ public class Utils {
         eventLog.add(new Trace(new String[]{"a", "e", "d"}));
         return eventLog;
     }
+    
+    public static Set<Trace> BPMNTOMResourceManagerLog(){
+    	Set<Trace> eventLog = new HashSet<>();
+    	eventLog.add(new Trace(new String[]{"a", "b", "c", "d", "h"}));
+    	eventLog.add(new Trace(new String[]{"a", "b", "c", "d", "e", "f", "g", "b", "c", "d", "h"}));
+    	eventLog.add(new Trace(new String[]{"a", "b", "c", "d", "e", "f", "g", "b", "c", "d", "e", "f", "g", "b", "c", "d", "h"}));
+    	return eventLog;
+    }
+    
+    public static Set<Trace> BPMNTOMTechnicalLeaderLog(){
+    	Set<Trace> eventLog = new HashSet<>();
+    	eventLog.add(new Trace(new String[]{"a", "b", "c", "d", "e", "f", "g", "h", "i", "b", "c", "d", "e", "f", "g", "h", "j", "k"
+    			, "l", "m", "n", "b", "c", "d", "e", "f", "g", "h", "j", "k"
+    			, "l", "m", "o", "p", "q"}));
+    	eventLog.add(new Trace(new String[]{"a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "o", "p", "q"}));
+    	eventLog.add(new Trace(new String[]{"a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "b", "c", 
+    			"d", "e", "f", "g", "h", "j", "k" , "l", "m", "o", "p", "q"}));
+    	return eventLog;
+    }
+    
+    public static Set<Trace> BPMNTOMTechnicalLeaderOptLog(){
+    	Set<Trace> eventLog = new HashSet<>();
+    	eventLog.add(new Trace(new String[]{"a", "b", "A", "h", "i", "b", "A", "h", "B", "m", "n", "b", "A", "h", "B", 
+    			"m", "C"}));
+    	eventLog.add(new Trace(new String[]{"a", "b", "A", "h", "B", "m", "C"}));
+    	eventLog.add(new Trace(new String[]{"a", "b", "A", "h", "B", "m", "n", "b", "A", 
+    			"h", "B", "m", "C"}));
+    	return eventLog;
+    }
 
     public static Set<Trace> demoL2eventLog() {
         Set<Trace> eventLog = new HashSet<>();
